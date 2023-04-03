@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* Colors */
+.Accent1 {
+    color: #FFDE00;
+    text-decoration: overline;
+}
+
+.Accent2 {
+    color: red;
+}
+
+/* Colors */
+
+/* Headers */
+header {
+    padding: 1rem;
+    display: flex;
+    background-color: #434242;
+}
+
+.Header-text {
+    display: inline;
+    padding: 25px;
+    color: white;
+}
+
+.Logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+/* Headers */
+/* Navigation */
+nav {
+    padding: 1rem;
+    background-color: #FFDE00;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li.Dropdown:hover .Dropdown-content {
+    display: block;
+    padding: 1rem;
+}
+
+nav .Dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    z-index: 1;
+    border-radius: 5%;
+}
+
+nav .Dropdown-content a {
+    display: block;
+    color: #333;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+nav .Dropdown-content a:hover {
+    min-width: 150px;
+    border-radius: 5%;
+}
+
+.Dropdown:hover .Dropdown-content {
+    display: block;
+    animation-name: Nav-animation;
+    animation-duration: 0.5s;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: large;
+}
+
+@keyframes Nav-animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.Act-name a {
+    color: black;
+}
+
+/* Navigation */
+/* Main */
+.Card-container {
+    display: flex;
+    height: 750px;
+}
+
+.Card {
+    width: 50%;
+    border-radius: 5px;
+    border: solid black 1px;
+}
+.Card:first-child {
+    background-color: #333;
+}
+.Center-position {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Images */
+.Images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Illustration img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.Image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+.Image:hover {
+    transform: scale(1.1);
+}
+/* Images */
+
+/* Instructions */
+.Tipbox {
+    padding: 1rem;
+    margin: 1rem;
+    color: red;
+    font-size: large;
+}
+.Counter{
+    margin-top: 25px;
+}
+/* Instructions */
+ol{
+    list-style: none;
+}
+.Card-steps{
+    margin-top: 100px;
+    padding: 2rem;
+    background-color: #609966;
+    width: 100%;
+    height: 100px;
+    text-align: left;
+    border-radius: 100px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.Steps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Steps h2{
+ text-align: left;
+}
+/* Main */
+
